@@ -1,0 +1,31 @@
+# Editorconfig is awesome!
+# https://editorconfig.org/
+
+# Top most editorconfig file
+root = true
+
+# Default configuration for all files
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+trim_trailing_whitespace = true
+
+# Python module configurations
+[*.py]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Markdown settings
+[*.md]
+trim_trailing_whitespace = false
+
+# Makefile configurations
+[{Makefile,**.mk}]
+# Use tabs for indentation (Makefiles require tabs)
+indent_style = tab
+indent_size = 8
